@@ -1,0 +1,66 @@
+
+
+
+
+.card{
+    background: url("/../../assets/image/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255,255,255);
+    
+    width: 500px;
+    height: 650px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+    
+}
+.data{
+    width: 380px;
+    height: 200px;
+}
+
+.card label{
+    display: inline-block;
+    width: 30%;
+    color: white;
+}
+
+.card span{
+    color: white;
+    
+    width: 30%;
+    font: bold;
+    
+}
+
+.text-center h2,h6{
+    color: white;
+}
+
+
+.btn{
+    margin-top: 30px;
+}
+
+.login-btn{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #224c78;
+    color: white;
+}
+
+.login-btn:hover{
+    background-color: #161860;
+    cursor: pointer;
+}
+

@@ -1,0 +1,59 @@
+{
+  "User": [
+    {
+      "id": 1,
+      "firstName": "abc",
+      "lastName": "abc",
+      "email": "a@gmail.com",
+      "userName": "shubham",
+      "password": "a@123",
+      "mobileNumber": 1122,
+      "dateOfBirth": "12-12-22",
+      "gender": "m"
+    },
+    {
+      "id": 2,
+      "firstName": "abc",
+      "lastName": "abc",
+      "email": "a@gmail.com",
+      "userName": "shubham",
+      "password": "a@123",
+      "mobileNumber": 1122,
+      "dateOfBirth": "12-12-22",
+      "gender": "m"
+    },
+    {
+      "id": 3,
+      "firstName": "shubham",
+      "lastName": "Jamakar",
+      "email": "s@gmail.com",
+      "userName": "shubham",
+      "password": "Shubham@123",
+      "mobileNumber": 432423,
+      "dateOfBirth": "2022-10-20",
+      "gender": "m"
+    },
+    {
+      "id": 4,
+      "firstName": "akshay",
+      "lastName": "markad",
+      "email": "akky@gmail.com",
+      "userName": "akky",
+      "password": "akky@123",
+      "mobileNumber": 4324234,
+      "dateOfBirth": "2022-10-28",
+      "gender": "Male"
+    },
+    {
+      "id": 5,
+      "firstName": "fsdf",
+      "lastName": "shubham",
+      "email": "s@gmail.com",
+      "userName": "fsdfsd",
+      "password": "ddd@123",
+      "mobileNumber": 432423,
+      "dateOfBirth": "2022-10-21",
+      "gender": "Male"
+    }
+  ]
+}

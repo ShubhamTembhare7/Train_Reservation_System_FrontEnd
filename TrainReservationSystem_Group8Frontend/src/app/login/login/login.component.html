@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+</script>
+
+<div class="container-flud">
+    <div class="card">
+        <div class="content">
+            <div class="heading">
+                <p [ngStyle]="{'color':'red'}">{{msg}}</p>
+                <h2>LOGIN</h2>
+            </div>
+            <form [formGroup]="loginform" (ngSubmit)="log()" >
+                <div class="data">
+                    <label for="">UserName</label>
+                    <input type="text" formControlName="userName" [(ngModel)]="user.userName" placeholder="username" >
+                    <div *ngIf="loginform.controls['userName'].touched && loginform.controls['userName'].invalid" style="color: red;">
+                        <div *ngIf="loginform.controls['userName'].hasError('required')">
+                            Username Required
+                        </div>
+                    </div>
+                </div>
+                <div class="data">
+                    <label for="">Password</label>
+                    <input type="password" formControlName="password" [(ngModel)]="user.password" placeholder="password" >
+                    <!-- <i class="fa fa-eye" id="touglePassword" style="margin-left:-30px ; cursor: pointer;" ></i> -->
+                    
+                    
+                    <div *ngIf="loginform.controls['password'].touched && loginform.controls['password'].invalid" style="color: red;">
+                        <div *ngIf="loginform.controls['password'].hasError('required')">
+                            Password Required 
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="login-btn1" type="submit" [disabled]="!loginform.valid" >LOGIN</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="login-btn2"  (click)="register()">Register</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>

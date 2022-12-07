@@ -1,0 +1,59 @@
+<div class="container-flud">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h2>Ticket Booking</h2>
+                
+                </div>
+                <form class="data">
+                    <form  (ngSubmit)="bookTrainTicket()"> 
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Train Name</label>
+                            <input type="text" readonly class="form-control" id="exampleInputPassword1" formControlName="firstName" placeholder="Train Name" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">From City</label>
+                            <input type="text" readonly class="form-control" id="exampleInputPassword1" formControlName="lastName" placeholder="From" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">To City</label>
+                            <input type="email" readonly class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" placeholder="To" >
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Departure Date</label>
+                            <input type="text" readonly class="form-control" id="exampleInputPassword1" formControlName="userName" placeholder="Departure Date" >
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Return Date</label>
+                          <input type="password" readonly class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Return Date" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Seat Status</label>
+                            <input type="text" readonly class="form-control" id="exampleInputPassword1" formControlName="mobileNumber" placeholder="Seat Status" >
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Passenger</label>
+                            <input type="number" class="form-control"  id="exampleInputPassword1" formControlName="dateOfBirth" placeholder="Enter Passenger"   >
+                          </div>
+                          <!-- <div class="form-group">
+                            <label for="exampleInputPassword1">Gender</label> <br>
+                            <input type="radio" name="gender" value="Male" formControlName="gender" [(ngModel)]="commonService.user.gender">
+                            <span >Male</span> &nbsp;
+                            <input type="radio" name="gender" value="Female" formControlName="gender" [(ngModel)]="commonService.user.gender">
+                            <span>Female</span>
+                          </div> -->
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Price</label>
+                            <input type="number" class="form-control" readonly  id="exampleInputPassword1" formControlName="dateOfBirth" [value]="150" >
+                          </div>
+                        <button type="submit" class="btn btn-primary"  >Book</button> 
+                      </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,43 @@
+<div class="container">
+    <table class="table table-striped">
+      <tbody [ngStyle]="{'color':'blue'}">
+        <th>Train Name</th>
+        <!-- <th>JourneyType</th> -->
+        <th>Train Source-Destination</th>
+        <th>Depart Date</th>
+        <th>Return Date</th>
+        <th>Seat Status</th>
+        <!-- <th>Passenger</th> -->
+        <!-- <th>Children</th> -->
+        <th>TravelClass</th>
+        <th>Book Now</th>
+       
+        <!-- <TH>EDIT</TH>
+        <TH>DELETE</TH> -->
+        <tr *ngFor="let t of train">
+          <td>{{t.trainName}}</td>
+          <!-- <td>{{t.journeyType}}</td> -->
+          <td>{{t.from}}--{{t.to}}</td>
+          <td>{{t.departDate}}</td>
+          <td>{{t.returnDate}}</td>
+          <td></td>
+          <!-- <td>{{t.adultPassenger}}</td> -->
+          <!-- <td>{{t.childrenPassenger}}</td> -->
+          <td>{{t.travelClass}}</td>
+          
+           <td><a class="btn" >
+            <button (click)="ticketBooking()">Book Now</button>
+            <!-- <i class="fa fa-edit"></i> -->
+          </a>
+          </td>
+          <!--<td><a class="btn" (click)="deleteData(e.id)">
+            <i class="fa fa-trash"></i>
+          </a>
+          </td>  -->
+           </tr>
+      </tbody>
+      
+    </table>
+    <!-- <button>Submit</button> -->
+  </div>
+  

@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h2>UPDATEDATA</h2>
+                    <h6>Register Yourself!!</h6>
+                </div>
+                <form class="data">
+                    <form [formGroup]="registerForm" (ngSubmit)="updateData(commonService.user)"> 
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" formControlName="firstName" placeholder="First Name" [(ngModel)]="commonService.user.firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" formControlName="lastName" placeholder="Last Name" [(ngModel)]="commonService.user.lastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email" placeholder="Enter email" [(ngModel)]="commonService.user.email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Username</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" formControlName="userName" placeholder="Username" [(ngModel)]="commonService.user.userName">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" placeholder="Password" [(ngModel)]="commonService.user.password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mobile Number</label>
+                            <input type="number"  class="form-control" id="exampleInputPassword1" formControlName="mobileNumber" placeholder="Mobile Number" [(ngModel)]="commonService.user.mobileNumber">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">DOB</label>
+                            <input type="text" class="form-control"  id="exampleInputPassword1" formControlName="dateOfBirth" placeholder="Date of Birth"  [(ngModel)]="commonService.user.dateOfBirth" >
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Gender</label> <br>
+                            <input type="radio" name="gender" value="Male" formControlName="gender" [(ngModel)]="commonService.user.gender">
+                            <span >Male</span> &nbsp;
+                            <input type="radio" name="gender" value="Female" formControlName="gender" [(ngModel)]="commonService.user.gender">
+                            <span>Female</span>
+                          </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                      </form>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

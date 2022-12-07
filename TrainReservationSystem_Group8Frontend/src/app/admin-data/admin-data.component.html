@@ -1,0 +1,37 @@
+<div class="container">
+    <table class="table table-striped">
+      <tbody >
+        <th>ID</th>
+        <th>FNAME</th>
+        <th>LNAME</th>
+        <th>EMAIL</th>
+        <th>USERNAME</th>
+        <th>PASSWORD</th>
+        <th>MOBNO</th>
+        <th>DOB</th>
+        <TH>GENDER</TH>
+        <TH>EDIT</TH>
+        <TH>DELETE</TH>
+        <tr *ngFor="let e of user">
+          <td>{{e.id}}</td>
+          <td>{{e.firstName}}</td>
+          <td>{{e.lastName}}</td>
+          <td>{{e.email}}</td>
+          <td>{{e.userName}}</td>
+          <td>{{e.password}}</td>
+          <td>{{e.mobileNumber}}</td>
+          <td>{{e.dateOfBirth}}</td>
+          <td>{{e.gender}}</td>
+          <td><a class="btn" (click)="editData(e)">
+            <i class="fa fa-edit"></i>
+          </a>
+          </td>
+          <td><a class="btn" (click)="deleteData(e.id)">
+            <i class="fa fa-trash"></i>
+          </a>
+          </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  

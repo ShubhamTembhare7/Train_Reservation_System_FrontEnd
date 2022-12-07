@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+
+<div class="navbar">
+   
+    <ul id="navbarGrp">
+        <li><a>HOME</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Train_ticket">ABOUT</a></li>
+        <li><a>CONTACT US</a></li>
+    </ul>
+    <ul id="login">
+        <li><a href="login"> LOGIN</a></li>
+    </ul>
+</div>
+<div class="homeBanner">
+   <p>{{msg}}</p>
+    <form [formGroup]="trainDetail" (ngSubmit)="trainStatus()" >
+        <div class="signup-form bg-dark">
+            <div class="Signup-head bg-warning" >
+                <h1>Reserve Your Ticket</h1> 
+            </div>
+            <!-- <div class="singup-content">
+                <input type="radio" class="radio" name="journeyType" value="One Way" formControlName="journeyType" [(ngModel)]="train.journeyType">
+                <label class="text-white">One Way</label>
+                <input type="radio" class="radio" name="journeyType" value="Return" formControlName="journeyType" [(ngModel)]="train.journeyType">
+                <label class="text-white">Return</label>
+            </div> -->
+            <div class="signup-content2">
+                <input type="search" formControlName="from" name="from" placeholder="Form" class="input bg-dark" [(ngModel)]="train.from">
+                
+            <!-- <label  class="input bg-dark">From</label>
+            <select  class="input bg-dark">
+                <option>SELECT</option>
+                <option>pune</option>
+                <option>mumbai</option>
+                <option>indore</option>
+            </select> -->
+
+                <i class="fa fa-exchange rotate90"></i>
+                <input type="text" formControlName="to" placeholder="to" name="to" class="input bg-dark" [(ngModel)]="train.to"> <br>
+            
+            <label class="text-white" style="margin-left: 10px;">DepartDate</label>
+            <input type="date" class="tarikh bg-dark text-white" placeholder="dd-mm-yyyy" name="departDate" formControlName="departDate" [(ngModel)]="train.departDate">
+            
+            <!-- <label class="text-white" style="margin-left: 10px;">Return</label>
+            <input type="date" class="tarikh bg-dark" placeholder="dd-mm-yyyy" name="returnDate" formControlName="returnDate" [(ngModel)]="train.returnDate"> <br> -->
+
+            <!-- <input type="number" class="bg-dark person" placeholder="Adults" name="adultPassenger" formControlName="adultPassenger" [(ngModel)]="train.adultPassenger">
+            <input type="number" class="bg-dark person" placeholder="Children" name="childrenPassenger" formControlName="childrenPassenger" [(ngModel)]="train.childrenPassenger"> <br> -->
+            <label class="text-white travel">Travel Class</label>
+            <select class="bg-dark text-white travel2" formControlName="travelClass" name="travelClass" [(ngModel)]="train.travelClass">
+                <option>SELECT</option>
+                <option>AC Frist Class(1A)</option>
+                <option>AC 2 tier(2A)</option>
+                <option>AC 3 tier(3A)</option>
+                <option>AC chair class(CC)</option>
+                <option>AC 3 Economy(3E)</option>
+                <option>Sleeper(SL)</option>
+                <option>First Class(FC)</option>
+                <option>Second Sitting(2S)</option>
+            </select>
+
+            <!-- <label class="text-white travel">Quota</label>
+            <select class="bg-dark text-white travel2">
+                <option>SELECT</option>
+                <option>General</option>
+                <option>Ladies</option>
+                <option>Tatkal</option>
+                <option>Lower Berth/Sr.Citizen</option>
+                <option>Premium Tatkal</option>
+                <option>Person with disability</option>
+            </select> -->
+
+            <input type="submit" value="Check Availability" class="submit-btn bg-warning" [disabled]="!trainDetail.valid">
+            
+            
+        </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- <table>
+    <tr>
+        <th>Train_ID</th>
+        <th>JourneyType</th>
+        <th>Train Sourch-Destination</th>
+        <th>DepartDate</th>
+        <th>ReturnDate</th>
+        <th>AdultPassenger</th>
+        <th>Children</th>
+        <th>TravelClass</th>
+    </tr>
+    <tr *ngFor="let t of trainSearchResult">
+        <td>{{t.trainId}}</td>
+          <td>{{t.journeyType}}</td>
+          <td>{{t.from}}--{{t.to}}</td>
+          <td>{{t.departDate}}</td>
+          <td>{{t.returnDate}}</td>
+          <td>{{t.adultPassenger}}</td>
+          <td>{{t.childrenPassenger}}</td>
+          <td>{{t.travelClass}}</td>
+          
+
+    </tr>
+   
+</table> -->
+
+

@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 85px;
+    justify-content: space-around;
+    background-color: rgba(184, 130, 48, 0.233);
+}
+
+.Signup-head{
+    background-image: url("src/assets/image/train.jpg");
+    background-repeat: no-repeat;
+    height: 90px;
+    background-position: right;
+    
+}
+.signup-form{
+    height: 353px;
+    width: 600px;
+    margin-top: 0%;
+    margin-left: 25%;
+}
+
+.Signup-head{
+    padding: 8px;
+}
+
+.singup-content .radio{
+    margin: 10px 10px;
+
+}
+
+.signup-content2 .input{
+    /* width: 400px; */
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+.signup-content2 .tarikh{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.signup-content2 .person{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
+
+.signup-content2 .travel{
+    margin:20px 20px;
+   
+}
+
+.signup-content2 .fa {
+    /* margin: 0 0 0 8px; */
+    color: #b3bcce;
+    /* padding-top: 8px; */
+}
+
+/* .rotate90 {
+    transform: rotate(90deg);
+} */
+.fa {
+    /* display: inline-block; */
+    /* font: normal normal normal 14px/1 FontAwesome; */
+    font-size: inherit;
+    /* text-rendering: auto; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
+    /* box-sizing: border-box; */
+    cursor: pointer;
+}
+
+
+
+.signup-content2 .travel2{
+    padding: 5px;
+    width: 180px;
+    
+}
+
+.signup-content2 .submit-btn{
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 10px;
+    margin-left: 200px;
+}
+.homeBanner::before{
+    background: url("/../assets/image/iiiii.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+    top: 0;
+    left: 0;
+}
+
+.navbar #logo a{
+    height: 50px;
+    width: 175px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar #logo{
+    padding: 15px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* #logo:hover{
+    transform: scale(1.2);
+} */
+
+#navbarGrp{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 525px;
+}
+
+#login{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 5%;
+}
+
+#login a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+}
+
+/* #navbarGrp li:hover{
+    cursor: pointer;
+    background-color: rgba(172, 255, 47, 0.541);
+} */
+#login li{
+    width: 130px;
+    padding: 0px;
+    text-align: center;
+}
+
+#login li :hover{
+
+    cursor: pointer;
+    background-color: rgba(255, 99,71, 0.425);
+    color: rgb(18, 147, 221);
+}
+
+#navbarGrp a{
+    text-decoration: none;
+    color: rgb(207, 207, 207);
+    font-size: 20px;
+}
+#navbarGrp li{
+    width: 150px;
+    text-align: center;
+    /* padding-top: 15px; */
+    /* padding: 0px; */
+}
+
+#navbarGrp li :hover{
+    cursor: pointer;
+    background-color: rgba(255, 99,71, 0.425);
+    color: rgb(19, 150, 226);
+}
+
+
